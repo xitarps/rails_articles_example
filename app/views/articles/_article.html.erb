@@ -1,0 +1,9 @@
+<p>
+  <%= article.title %>
+  <br>
+  <%= article.description.truncate(5) %>
+  <br>
+  <%= link_to 'detalhes', article %> | 
+  <%= link_to 'editar', edit_article_path(article) %> | 
+  <%= link_to 'apagar', article_path(article), data: {turbo_method: :delete } %> 
+</p>
